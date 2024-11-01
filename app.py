@@ -22,7 +22,7 @@ def finalize_app():
     exibir_subtitulos('Finalizando APP')
       
 def voltar_ao_menu():
-    input('\nDigite uma tecla para voltar ao menu.')
+    input('Digite uma tecla para voltar ao menu.')
     main()
           
       
@@ -39,6 +39,17 @@ def exibir_subtitulos(texto):
     
     
 def cadastrar_restaurante():
+    '''
+    Essa função e responsavel por cadastrar novo um novo restaurante
+    
+    Inputs:
+    - Nome restaurante
+    - Categoria
+    
+    Output:
+    - Adiciona um novo restaurante na lista de restaurantes
+    
+    '''
     exibir_subtitulos('Cadastro de novos restaurantes')    
     nome_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     categoria = input(f'Digite o nome da categoria do restaurante {nome_restaurante}:')
